@@ -15,7 +15,24 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        title: Text("Play Words"),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+          Icon(Icons.arrow_back,color: Colors.white,),
+          Text("LEVEL 1"),
+          Row(children: [
+         Icon(Icons.watch_later_outlined,color: Colors.white,),
+         SizedBox(width: 5,),
+          Text("3")
+          ],),
+          Row(children: [
+         Icon(Icons.heart_broken,color: Colors.red,),
+         SizedBox(width: 5,),
+          Text("3")
+          ],)
+ 
+
+        ]),
         centerTitle: true,
       ),
       body: Column(
